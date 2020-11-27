@@ -19,3 +19,4 @@ import './Text/Text';
 import './Container/Container';
 import './ExperienceFragment/ExperienceFragment';
 import './Navigation/Navigation';
+import './ImagesByTag/ImagesbyTag';

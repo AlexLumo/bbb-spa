@@ -12,7 +12,6 @@ const NavigationEditConfig = {
 class Navigation extends React.Component {
 
     render() {
-        console.log(this.props);
         return (
           <div>
               <p>Navigation!</p>
