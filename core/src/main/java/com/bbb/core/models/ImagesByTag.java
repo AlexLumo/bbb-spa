@@ -1,10 +1,13 @@
 package com.bbb.core.models;
 
+import com.adobe.cq.export.json.ComponentExporter;
+import com.adobe.cq.export.json.ExporterConstants;
 import com.day.cq.commons.RangeIterator;
 import com.day.cq.tagging.TagManager;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
+import org.apache.sling.models.annotations.Exporter;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.InjectionStrategy;
 import org.apache.sling.models.annotations.injectorspecific.SlingObject;
@@ -15,9 +18,14 @@ import java.util.List;
 import java.util.Objects;
 
 @Model(
-        adaptables = SlingHttpServletRequest.class
+        adaptables = SlingHttpServletRequest.class,
+        resourceType = ImagesByTag.RESOURCE_TYPE,
+        adapters = {ComponentExporter.class}
 )
-public class ImagesByTag {
+@Exporter(name = ExporterConstants.SLING_MODEL_EXPORTER_NAME , extensions = ExporterConstants.SLING_MODEL_EXTENSION)
+public class ImagesByTag implements ComponentExporter {
+
+    public static final String RESOURCE_TYPE = "bbb/components/imagesbytag";
 
     private static final String DAM_ROOT = "/content/dam/wkndmuzik";
     private static final String METADATA_NODE = "/jcr:content/metadata";
@@ -44,5 +52,10 @@ public class ImagesByTag {
 
     public List<String> getImages() {
         return images;
+    }
+
+    @Override
+    public String getExportedType() {
+        return RESOURCE_TYPE;
     }
 }

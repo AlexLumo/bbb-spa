@@ -5,18 +5,18 @@ const ImagesByTagEditConfig = {
     emptyLabel: 'Images By Tag',
 
     isEmpty: function(props) {
-        return !props || !props.imageTag || props.imageTag.length < 1;
+        return !props || !props.images || props.images.images < 1;
     }
 };
 
 class ImagesByTag extends React.Component {
 
     renderImages() {
-        if (!this.props.imageTag || this.props.imageTag.length < 1) {
+        if (!this.props.images || this.props.images.length < 1) {
             return <p>No images :(</p>;
         }
 
-        return this.props.imageTag.map(imageTag => <p>{imageTag}</p>);
+        return this.props.images.map(imageSrc => <img src={imageSrc} />);
     }
 
     render() {
