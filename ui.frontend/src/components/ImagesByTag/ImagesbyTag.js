@@ -16,14 +16,14 @@ class ImagesByTag extends React.Component {
             return <p>No images :(</p>;
         }
 
-        return this.props.images.map(imageSrc => <img src={imageSrc} />);
+        return this.props.images.map(imageSrc => <img key={imageSrc} className="image-by-tag-cmp__image" src={imageSrc} />);
     }
 
     render() {
         console.log(this.props);
         return (
-          <div>
-              <p>Images By Tag!</p>
+          <div className="image-by-tag-cmp">
+              <p className="image-by-tag-cmp__header">Images By Tag!</p>
               {this.renderImages()}
           </div>
         );
