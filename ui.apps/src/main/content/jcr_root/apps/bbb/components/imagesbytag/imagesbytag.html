@@ -1,0 +1,5 @@
+<sly data-sly-use.model="com.bbb.core.models.ImagesByTag">
+    <div data-sly-list.image="${model.images}">
+        <img src="${image @ context='uri'}" />
+    </div>
+</sly>

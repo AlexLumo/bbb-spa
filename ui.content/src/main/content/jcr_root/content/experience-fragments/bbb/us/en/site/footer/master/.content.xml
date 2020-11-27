@@ -20,6 +20,14 @@
                 sling:resourceType="bbb/components/text"
                 text="&lt;p>Copyright 2020, BBB SPA Demo.&amp;nbsp;All rights reserved.&lt;/p>&#xd;&#xa;&lt;p>345 Park Avenue,&amp;nbsp;San Jose, CA 95110-2704, USA&lt;/p>&#xd;&#xa;"
                 textIsRich="true"/>
+            <imagesbytag
+                jcr:created="{Date}2020-11-27T11:54:38.639+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2020-11-27T11:54:53.627+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="bbb/components/imagesbytag"
+                imageTag="[core-components-examples:component-type/atom,core-components-examples:component-type/template]"/>
         </root>
     </jcr:content>
 </jcr:root>
