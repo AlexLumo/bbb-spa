@@ -20,6 +20,7 @@
                     text="&lt;p>Hello World!&lt;/p>"
                     textIsRich="true">
                     <cq:responsive jcr:primaryType="nt:unstructured"/>
+                </text>
                 <imagesbytag
                     jcr:created="{Date}2020-11-27T11:54:38.639+02:00"
                     jcr:createdBy="admin"
