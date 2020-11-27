@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/conf/bbb" mode="merge"/>
-    <filter root="/content/bbb" mode="merge"/>
+    <filter root="/conf/bbb"/>
+    <filter root="/content/bbb"/>
     <filter root="/content/dam/bbb" mode="merge"/>
     <filter root="/content/experience-fragments/bbb" mode="merge"/>
 </workspaceFilter>
