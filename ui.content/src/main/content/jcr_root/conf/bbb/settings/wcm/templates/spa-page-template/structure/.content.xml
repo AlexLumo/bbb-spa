@@ -3,6 +3,8 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2020-11-27T11:53:24.207+02:00"
+        cq:lastModifiedBy="admin"
         cq:template="/conf/bbb/settings/wcm/templates/spa-page-template"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="bbb/components/page">
