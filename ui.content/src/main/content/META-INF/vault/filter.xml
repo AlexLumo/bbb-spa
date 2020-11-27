@@ -3,5 +3,5 @@
     <filter root="/conf/bbb"/>
     <filter root="/content/bbb"/>
     <filter root="/content/dam/bbb" mode="merge"/>
-    <filter root="/content/experience-fragments/bbb" mode="merge"/>
+    <filter root="/content/experience-fragments/bbb"/>
 </workspaceFilter>
