@@ -2,6 +2,8 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
+        cq:lastModified="{Date}2020-11-28T21:00:02.722+02:00"
+        cq:lastModifiedBy="admin"
         cq:tags="[]"
         cq:template="/conf/bbb/settings/wcm/templates/xf-web-variation"
         cq:xfMasterVariation="{Boolean}true"
@@ -14,17 +16,16 @@
             sling:resourceType="bbb/components/container"
             layout="simple">
             <navigation
+                jcr:lastModified="{Date}2020-11-28T21:00:02.668+02:00"
+                jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="bbb/components/navigation"
                 collectAllPages="false"
-                navigationRoot="/content/bbb/us/en"
+                disableShadowing="false"
+                navigationRoot="/content/bbb/us/en/home"
                 skipNavigationRoot="false"
-                structureDepth="1"/>
-            <languagenavigation
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="bbb/components/languagenavigation"
-                navigationRoot="/content/bbb/us"
-                structureDepth="2"/>
+                structureDepth="1"
+                structureStart="1"/>
             <search
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="bbb/components/search"
